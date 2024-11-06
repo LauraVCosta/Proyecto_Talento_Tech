@@ -167,8 +167,7 @@ header{background-color: white;
             grid-template-rows: auto;
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 20px;
-            grid-template-areas:
-                
+            grid-template-areas:              
                 "columna1Main imagenCentralMain columna3Main";
         }
 
@@ -200,9 +199,9 @@ header{background-color: white;
             align-items: start;
         }
         
-.imagenCentralMain img {
+.imagenCentralMain { img {
             border-radius: 30px;
-        }
+        }}
         
 .columna3Main {
             grid-area: columna3Main;
