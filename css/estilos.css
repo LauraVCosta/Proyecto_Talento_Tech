@@ -1,0 +1,720 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;    
+}
+
+h1{
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+    font-size: 1.7rem;
+    }
+
+h2{font-family: "Dosis", sans-serif;
+        font-style: normal;   
+        font-size: 1.3rem; }
+
+h3, a  {
+        font-size: 1rem; /* Este tamaño es relativo al elemento raíz (html) */
+        font-family: Dosis, sans-serif;}  
+/*h4, h5, h6{
+font-family: "Dosis", sans-serif;
+font-style: normal;   
+font-size: 1.5em; } */       
+
+
+ 
+p{font-size:1rem;
+    line-height: 1.5;}
+
+
+a{font-family: "Open Sans", sans-serif;
+            text-decoration: none;
+            color: black; }
+
+    
+
+ul{
+    list-style: none;
+    
+    li{
+        display: inline-block;
+        margin-right: 15px;
+             }}
+       
+.fa-cart-shopping {font-size:1.5rem;}
+.logoBordadines {
+    font-family: "Playwrite GB S", serif;
+    font-size: 1.7rem;
+    
+    font-style: normal;        
+  }
+
+header{background-color: white;
+    position: sticky;
+    
+    top:0;
+    z-index:1000;
+    padding: 20px;
+    ul{
+        list-style: none;
+    
+        li{
+            display: inline-block;
+            margin-right: 15px;
+            a{
+                font-family: "Dosis", sans-serif;
+                text-decoration: none;
+                color:  black;
+                font-size: 1.4rem; }}}     
+        }    
+    
+
+.contenedorGridHeader
+    
+    {
+    display:flex;
+    flex-wrap:wrap;
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:"columna1Header logoHeader columna2Header"
+                        "columna1Header logoHeader columna2Header";
+    
+    .columna1Header{grid-area:columna1Header;}
+    .logoHeader{grid-area:logoHeader;
+    padding-left:40px;}
+    .columna2Header{grid-area:columna2Header;}
+        
+    .columna1Header{display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items: center;
+            }
+
+    .columna2Header{display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items: center;
+                        }    
+                        
+    .logoHeader{  display:flex; 
+        flex-wrap:wrap;
+        
+        align-items: center;
+        justify-content: center;}
+    }
+
+.sectionPrincipal {
+    
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+            
+    background-image:url("../assets/img/background3.png");
+   
+    background-position: top;       
+    background-size: cover;
+    background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
+    background-color: rgba(255, 255, 255, 0.24); /* Capa de fondo blanco semitransparente */
+    
+            
+    padding-top: 80px;
+    padding-bottom: 60px;
+            
+               
+    h1 {                   
+        color:#563b5a; };
+    p{  text-align:justify;
+        font-size: 1.2rem;
+        line-height:1.5;
+        font-weight: 550;       
+        color:  #180e44;
+        padding-left: 100px;
+        padding-right: 100px;
+            }
+        }
+
+.tituloMain {
+           
+            
+            display: flex;
+            justify-content: center;
+            align-items:flex-end;
+            h1, h2 {padding-right: 30px;
+                padding-left: 30px;
+                padding-top:40px;
+        }  }      
+   
+
+.contenedorGridIndex {padding-top: 30px;
+    h3 a{font-size:1.1em;}
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            grid-template-areas:
+                
+                "columna1Main imagenCentralMain columna3Main";
+        }
+
+        h3 {
+            padding-top: 15px;
+        }
+        
+        .contenedorGridIndex p {
+            padding-top: 5px;
+        }
+        
+        
+
+        
+.columna1Main {
+            grid-area: columna1Main;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            line-height: 1.5;
+            align-items: center;
+        }
+        
+.imagenCentralMain {
+            grid-area: imagenCentralMain;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        
+.imagenCentralMain img {
+            border-radius: 30px;
+        }
+        
+.columna3Main {
+            grid-area: columna3Main;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            line-height: 1.5;
+            align-items: center;
+        }
+        
+
+
+
+.contenedorFooter {
+           
+            background-image: url(../assets/img/background66.png);
+            background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
+            background-color: rgba(202, 253, 192, 0.6); /* Capa de fondo blanco semitransparente */
+
+            display: flex;
+
+            flex-wrap: wrap;
+            
+            align-items:flex-start;
+            justify-content:space-evenly;
+            
+            padding: 20px;
+        
+            p{font-size: 1rem}  }
+  
+.logoFooter{img
+        {width:90px}}
+            
+.menusFooter 
+    
+            ul {padding-top:10px;
+                list-style: none; 
+                
+                li {
+                    display: block;
+                    
+                
+                    a {
+                    display: block; 
+                    font-family: "Open Sans", sans-serif; 
+                    text-decoration: none; 
+                    color: black;
+                    
+                }}}
+            
+
+.tituloAncla {
+    font-size: 1rem; /* Este tamaño es relativo al elemento raíz (html) */
+    font-family: Dosis, sans-serif;}  
+
+
+.parrafoFooter {
+                width: 20%; 
+                
+                font-size: 1rem; 
+                text-align: justify; 
+                line-height:1.5;
+                p {padding-top:10px;}
+            }       
+        
+       
+        
+.footerRight {
+            display: flex;
+            flex-direction: column;
+            align-items:baseline; /* Alinea elementos de .footerRight a la izquierda dentro de este contenedor */
+            justify-content: center;
+            text-align: left;
+            width: 30%; /* Ajusta según sea necesario */}
+            .iconos{display:flex;
+            justify-content: center;}
+
+
+      
+.fa-instagram, 
+.fa-facebook, 
+.fa-twitter {
+            display: block;
+            font-size: 1.5rem;
+            padding-top: 10px;
+            padding-right:1opx;
+           }        
+.suscribirse {width:280px;
+            margin-top: 10px;}
+ 
+.mail {width:280px;
+      }            
+            
+.botonSuscribirse {width:280px;
+    
+    border: 4px   #521a3c; width:280px;
+    padding: 8px; 
+    border-radius: 10px; 
+    background-color: white; 
+    box-shadow: 7px 7px 7px 7px rgba(33, 128, 184, 0.76); 
+
+     
+    font-size: 1rem; 
+    color:#563b5a; 
+    font-weight: bolder; }
+
+
+    
+        
+
+    
+.fa-whatsapp { font-size: 3em;
+        position:fixed;
+        bottom: 150px;
+        right: 15px;
+        background-color: white;}
+        
+.footerDerechos{font-size: 0.9rem;
+    padding-top:10px;  
+    padding-bottom:10px;
+    }   
+       
+    
+    
+    
+       
+    
+.volverArriba{
+        border: 4px ridge solid #521a3c; 
+        padding: 8px; 
+        border-radius: 10px; 
+        background-color: white; 
+        box-shadow: 7px 7px 7px 7px rgba(33, 128, 184, 0.76); 
+    
+        font-family: "Dosis", sans-serif; 
+        font-size: 1.4rem; 
+        color:#563b5a; 
+        font-weight: bolder; 
+        
+        position: fixed; /* Mantiene el botón en una posición fija */
+        bottom: 50px; /* Espacio desde la parte inferior */
+        right: 15px; /* Espacio desde la derecha */
+        } 
+
+
+/* FINAL index */
+
+
+/* COMIENZO productos*/
+
+.sectionProductos {
+    
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+            
+    background-image:url("../assets/img/background3.png");
+   
+    background-position: bottom;       
+    background-size: cover;
+    background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
+    background-color: rgba(255, 255, 255, 0.24); /* Capa de fondo blanco semitransparente */
+    
+    
+            
+    padding-top: 80px;
+    padding-bottom: 60px;
+            
+               
+    h1 {                   
+        color:#563b5a; };
+    p{  text-align:justify;
+        font-size: 1.2rem;
+        line-height:1.5;
+        font-weight: 550;       
+        color:  #0e082e;
+        padding-left: 100px;
+        padding-right: 100px;
+            }
+        }
+
+.tituloProductos{
+           
+            
+    display: flex;
+    justify-content:center;
+    align-items: last-baseline;
+    padding-top:40px;
+    padding-bottom:20px;
+    h1, h2 {padding-right: 30px;
+        padding-left: 30px;
+        
+}  }   
+
+
+   
+
+
+.galeriaDestacados {
+   
+    padding:20px;
+    margin:0 auto;
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+       
+        .tarjetaDestacados{
+            
+            width: 350px;
+            height: 550px;
+            
+            text-align: center;
+            padding: 10px;
+            box-shadow: 7px 7px 7px 7px rgba(233, 177, 200, 0.76); 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            img{
+                border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    width: 100%;
+                    height: 80%;
+                    object-fit: cover;
+             }
+        }
+    }
+.textoProductos{padding-left:20px;
+padding-right:20px;
+margin-bottom: 40px;}   
+  
+/* FINAL productos*/
+
+/* COMIENZO contacto*/
+
+.formContacto{width:700px;
+padding: 20px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+margin:50px auto;
+background-image: url(../assets/img/acuarela22.png);
+background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
+background-color: rgba(202, 253, 192, 0.6); /* Capa de fondo blanco semitransparente */
+background-color:#bbb7b7;}
+
+form label {
+    width: 200px;
+    display:inline-block;
+}
+
+form legend {padding-top: 20px;
+    width: 300px;
+    display:inline-block;
+}
+
+form input,select{width:300px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(27, 24, 27);
+    padding: 3px 10px;
+    margin: 8px 0;}
+
+
+fieldset {padding-top:20px;}
+    
+fieldset form label {
+    width: 150px;
+    display:inline-block;}
+
+fieldset form input {width:300px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid rgb(61, 47, 61);
+        padding: 3px 10px;
+        margin: 8px 0;}
+
+textarea {
+    width:100%;
+   
+    padding: 5px;
+    box-sizing:border-box;
+    border-radius: 10px; }
+
+
+
+.botones {width: 100px;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 2px solid rgb(61, 47, 61);
+    border-radius: 10px; }    
+
+/* FINAL contacto*/
+
+
+/* COMIENZO talleres*/
+
+.paddingTalleres{
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:20px;}
+    h2{padding-top:15px;
+        }
+    p{padding-top:5px;}    
+
+.parrafosBottom {padding-top:20px;
+text-align: center;
+font-family: "Dosis", sans-serif;
+font-size:1.5rem;
+font-weight: 550;}
+
+table 
+{box-sizing: border-box;
+    width: 90%;
+    border: 1px solid #000;
+    margin-bottom:30px;
+    margin-left:50px;
+    background-image: linear-gradient(to right top, #f8008d, #ee34a6, #e14ebb, #d162cd, #c073db, #d875d5, #ec79cf, #fe7ec8, #ff86a1, #ffa078, #ffc35a, #f6e857);
+    }
+    th, td {width: 14%;
+        text-align: left;
+        padding:5px;
+        border: 1px solid #bbb7b7;
+        background: #fff;
+        color: #000;
+        
+         }
+    caption{padding:30px;}
+
+/* FINAL talleres*/
+
+/*COMIENZO materiales*/
+
+.galeriaMateriales {
+   
+    padding:20px;
+    margin:0 auto;
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+       
+        .tarjetasMateriales{
+            box-sizing: border-box;
+            width: 350px;
+            height: 400px;
+            
+            text-align: center;
+           
+            box-shadow: 7px 7px 7px 7px rgba(206, 177, 233, 0.76); 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+           
+            img{
+                border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    width: 95%;
+                    height:75%;
+                    object-fit:scale-down; /* probar con cover*/
+                    
+             }
+        }
+    }
+   
+    
+     
+    
+/*FINAL materiales*/
+
+
+
+/*COMIENZO patrones*/
+.galeriaPatrones {
+   
+    padding:20px;
+    margin:0 auto;
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+       
+        .tarjetaPatrones{
+            
+            width: 300px;
+            height: 350px;
+            
+            text-align: center;
+            padding: 10px;
+            box-shadow: 7px 7px 7px 7px rgba(185, 175, 238, 0.76); 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            img{
+                border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    width: 100%;
+                    height: 80%;
+                    object-fit:contain;
+                    margin-bottom: 20px;}
+             
+        }
+    }
+.textoProductos{padding-left:20px;
+padding-right:20px;
+margin-bottom: 40px;}   
+  
+
+
+/*FINAL patrones*/
+
+
+/*COMIENZO nosotros*/
+
+.mainNosotros  {
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.visual {
+    width: 700px;
+    background: wheat;
+    margin: 0.5rem 0;
+}
+
+.card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/img/acuarela22.png);
+    background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
+    /*background: lightpink;*/
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*FINAL nosotros*/
+
+
+
+
+
+
+
+
+
+
+
+.sectionPrincipalTalleres{
+        background-image: url("../assets/img/talleres3.png");
+        background-size:cover;
+        background-position:center;
+        
+        padding-top: 15px;
+        
+        height: 40vh;
+        
+        font-size:1.2em;
+        font-weight:normal;
+        color:#7c2f5f;
+        h1 {text-align: center};
+        }
+
+
+.contenedorTextoSectionPrincipalNosotros{
+
+            margin:0 auto;
+            margin-top: 10px;
+            padding: 0 200px;
+            text-align:center;
+            font-size: 0.8em;
+            line-height:1.5;
+            font-weight: 550;
+            color: #f1ce91; 
+            backdrop-filter: brightness(0.7);}
+
+
+.sectionPrincipalNosotros{background-image: url("../assets/img/nosotros_editado.png");
+    
+    background-size:cover;
+    background-position:bottom;
+    
+    padding-top: 15px;
+    
+    height: 50vh;
+   
+    font-size:1.6em;
+    
+    color: rgb(126, 10, 87);   
+    h1 {text-align: center;
+        font-weight:bold;};}     
+ 
+
+
+  
+    
+    
+
+
+
+
+
+
