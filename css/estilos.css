@@ -122,12 +122,12 @@ header{background-color: white;
     justify-content: center;
     flex-wrap: wrap;
             
-    background-image:url("../assets/img/background3.png");
+    background-image:url("../assets/img/flores2_1920.png");
    
     background-position: top;       
-    background-size: cover;
+    background-size:contain;
     background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
-    background-color: rgba(255, 255, 255, 0.24); /* Capa de fondo blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.486);
     
             
     padding-top: 80px;
@@ -218,9 +218,9 @@ header{background-color: white;
 
 .contenedorFooter {
            
-            background-image: url(../assets/img/background66.png);
+            background-image: url(../assets/img/hojas1_640.png);
             background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
-            background-color: rgba(202, 253, 192, 0.6); /* Capa de fondo blanco semitransparente */
+            background-color: rgba(255, 255, 255, 0.486);
 
             display: flex;
 
@@ -359,12 +359,12 @@ header{background-color: white;
     justify-content: center;
     flex-wrap: wrap;
             
-    background-image:url("../assets/img/background3.png");
+    background-image:url("../assets/img/flores1_1920.png");
    
-    background-position: bottom;       
-    background-size: cover;
+    background-position: top;       
+    background-size:contain;
     background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
-    background-color: rgba(255, 255, 255, 0.24); /* Capa de fondo blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.486); /* Capa de fondo blanco semitransparente */
     
     
             
