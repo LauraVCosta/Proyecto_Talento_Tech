@@ -334,7 +334,8 @@ header{background-color: white;
 @media screen and (max-width: 768px) {
                 .contenedorFooter{display:flex;
                     flex-direction: row;
-                    justify-content: space-between;}
+                    justify-content: space-between;
+                width:initial;}
             }            
 
 
@@ -393,17 +394,17 @@ header{background-color: white;
             text-align: left;
             width: 30%; /* Ajusta según sea necesario */}
             .iconos{display:flex;
-            justify-content: center;}
+            justify-content: center;
+            flex-wrap: wrap;}
 
 @media screen and (max-width: 768px){
     .footerRight{
         flex-direction:row;
         justify-content: space-evenly;
-        /*width:90%;*/
-        width: initial;
+        width:90%;
+    
         
-        padding-left: 20px;
-        padding-right: 20px;
+       
     }}
         
       
