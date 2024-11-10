@@ -121,32 +121,53 @@ header{background-color: white;
             align-items: center;
             justify-content: center;
         }
-        
+     
+    .guardaHeaderMobile{display:none;}    
    
     @media screen and (max-width: 768px) {
+        
+        .guardaHeaderMobile {display:flex;
+            justify-content: center;
+           } 
+        
         .contenedorGridHeader {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                max-width: 100%; 
-                overflow: hidden;
-                padding: 20px; 
-            }
+           
         
-        .contenedorGridHeader .logoHeader img {
-                width: 64px;
+            display: flex;
+            flex-direction: column;
+            
+            
+            justify-content: space-between;
+            max-width: 100%; 
+            text-align:justify;
+            overflow: hidden;    
+            
+             }
+
+   
+
+        .logoHeader img {
+                width: 90px;
+                padding-right:20px;
+                padding-top:8px;
             }
+        .guardaMobile {display: none;
+              
+            }}
+           
+
+        /*
+        .columna1Header .columna1HeaderMobile{display:flex;
+        flex-direction: row;
+        justify-content: left;}
         
-        .guardaMobile1 {
-                max-width: 100%; /* Limita el ancho de la imagen */
-                height: auto;
-            }
+        
+        
          
         .contenedorGridHeader .logoHeader img {
                     width: 64px;
-                }
-        .guardaMobile2 {display: none;}    }  
-
+                }}
+*/        
         
 
 .sectionPrincipal {
@@ -294,7 +315,7 @@ header{background-color: white;
     
 
 .contenedorFooter {
-           
+            width: 100%;
             background-image: url(../assets/img/hojas1_640.png);
             background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
             background-color: rgba(255, 255, 255, 0.486);
@@ -309,7 +330,14 @@ header{background-color: white;
             padding: 20px;
         
             p{font-size: 1rem}  }
-  
+
+@media screen and (max-width: 768px) {
+                .contenedorFooter{display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;}
+            }            
+
+
 .logoFooter{img
         {width:90px}}
 
@@ -334,6 +362,9 @@ header{background-color: white;
                     
                 }}}
             
+@media screen and (max-width: 768px) {
+    .menusFooter {width: initial;}
+}          
 
 .tituloAncla {
     font-size: 1rem; 
@@ -367,8 +398,12 @@ header{background-color: white;
 @media screen and (max-width: 768px){
     .footerRight{
         flex-direction:row;
-        width:90%;
-        gap: 20px;
+        justify-content: space-evenly;
+        /*width:90%;*/
+        width: initial;
+        
+        padding-left: 20px;
+        padding-right: 20px;
     }}
         
       
@@ -382,6 +417,11 @@ header{background-color: white;
            }        
 .suscribirse {width:280px;
             margin-top: 10px;}
+
+/*@media screen and (max-width: 768px) {
+    .footerRight .suscribirse {width: 70%;}
+} */          
+
  
 .mail {width:280px;
       }            
@@ -399,7 +439,12 @@ header{background-color: white;
     color:#563b5a; 
     font-weight: bolder; }
 
-
+@media screen and (max-width: 768px) {
+    .mail {width: 60%;
+        font-size:0.9rem;}
+    .botonSuscribirse  {width: 60%;
+        font-size:1rem;}   
+}
     
         
 
@@ -410,11 +455,19 @@ header{background-color: white;
         right: 15px;
         background-color: white;}
         
+@media screen and (max-width: 768px) {
+    .fa-whatsapp {font-size: 2rem;
+        bottom: 100px;}
+}        
+        
 .footerDerechos{font-size: 0.9rem;
     padding-top:10px;  
     padding-bottom:10px;
     }   
-       
+
+@media screen and (max-width: 768px){
+    .footerDerechos{padding-left: 20px;}
+}
     
     
     
@@ -431,17 +484,17 @@ header{background-color: white;
         font-size: 1.4rem; 
         color:#563b5a; 
         font-weight: bolder; 
-        
+        text-align: center;
         position: fixed; /* Mantiene el botón en una posición fija */
         bottom: 50px; /* Espacio desde la parte inferior */
         right: 15px; /* Espacio desde la derecha */
         } 
         
 @media screen and (max-width: 768px) {
-    .contenedorFooter{display:flex;
-        flex-direction: row;
-        justify-content: space-between;}
-}
+    .volverArriba{width: 30%;
+        font-size: 1.2rem;}
+    }
+        
 
 /* FINAL index */
 
@@ -624,6 +677,11 @@ textarea {
     border: 2px solid rgb(61, 47, 61);
     border-radius: 10px; }    
 
+
+@media screen and (max-width: 768px){
+    form{height:initial;}
+}
+
 /* FINAL contacto*/
 
 
@@ -643,9 +701,12 @@ font-family: "Dosis", sans-serif;
 font-size:1.5rem;
 font-weight: 550;}
 
+div table {
+    width: 90%;}
+
 table 
 {box-sizing: border-box;
-    width: 90%;
+   
     border: 1px solid #000;
     margin-bottom:30px;
     margin-left:50px;
@@ -660,6 +721,14 @@ table
         
          }
     caption{padding:30px;}
+
+    
+  
+@media screen and (max-width: 768px) {
+        table {
+       
+        width:50%;}
+      }
 
 /* FINAL talleres*/
 
@@ -757,18 +826,8 @@ margin-bottom: 40px;}
     justify-content: center;
     align-items: center;
         div {padding-top: 20px;}
+    }
     
-    
-    
-}
-
-.visual {
-    /*width: 700px;*/
-    /*background: wheat;*/
-    margin: 0.5rem 0;
-
-}
-
 .visual video {border-radius: 20px;}
 
 .card {
@@ -783,12 +842,13 @@ margin-bottom: 40px;}
     background-position: center;  /* Centra la imagen de fondo */
     
 
-    padding: 1rem;
+    padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     video {
         border-radius: 10px;
+        
         
         }
 }
@@ -802,7 +862,12 @@ margin-bottom: 40px;}
     padding-right: 20px;
 }
 
+@media screen and (max-width: 768px){
+    .card{width: 90%;
 
+        video{width:95%;
+            }}
+}
 
 
 /*FINAL nosotros*/
@@ -813,6 +878,10 @@ margin-bottom: 40px;}
 .visual iframe {border-radius: 20px;}
 
 .parrafosEncontranos {adress{padding-top: 20px;}}
+
+@media screen and (max-width: 768px){
+    .visual iframe{width: initial;}
+}
 
 /*FINAL encontranos*/
 
