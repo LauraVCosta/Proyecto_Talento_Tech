@@ -376,10 +376,10 @@ header{background-color: white;
 .footerRight {
             display: flex;
             flex-direction: column;
-            align-items:baseline; /* Alinea elementos de .footerRight a la izquierda dentro de este contenedor */
+            align-items:baseline; 
             justify-content: center;
             text-align: left;
-            width: 30%; /* Ajusta según sea necesario */}
+            width: 30%;}
             .iconos{display:flex;
             justify-content: center;
             flex-wrap: wrap;}
@@ -451,11 +451,10 @@ header{background-color: white;
 .footerDerechos{font-size: 0.9rem;
     padding-top:10px;  
     padding-bottom:10px;
+    padding-left: 20px;
     }   
 
-@media screen and (max-width: 768px){
-    .footerDerechos{padding-left: 20px;}
-}
+
     
     
     
@@ -473,9 +472,9 @@ header{background-color: white;
         color:#563b5a; 
         font-weight: bolder; 
         text-align: center;
-        position: fixed; /* Mantiene el botón en una posición fija */
-        bottom: 50px; /* Espacio desde la parte inferior */
-        right: 15px; /* Espacio desde la derecha */
+        position: fixed; 
+        right: 15px;
+        bottom: 50px; 
         } 
         
 @media screen and (max-width: 768px) {
@@ -500,7 +499,7 @@ header{background-color: white;
     background-position: top;       
     background-size:contain;
     background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
-    background-color: rgba(255, 255, 255, 0.486); /* Capa de fondo blanco semitransparente */
+    background-color: rgba(129, 252, 211, 0.486); /* Capa de fondo blanco semitransparente */
     
     
             
@@ -560,15 +559,8 @@ header{background-color: white;
 }  }   
 
 @media screen and (max-width: 768px){
-    .tituloProductos {display:none;}
+    .tituloProductos {display:none;}}
         
-
-    }
-
-
-
-   
-
 
 .galeriaDestacados {
    
@@ -583,11 +575,11 @@ header{background-color: white;
         .tarjetaDestacados{
             
             width: 350px;
-            height: 550px;
+            height: 600px;
             
             text-align: center;
             padding: 10px;
-            box-shadow: 7px 7px 7px 7px rgba(233, 177, 200, 0.76); 
+            box-shadow: 7px 7px 7px 7px rgba(111, 235, 208, 0.425); 
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             border-bottom-left-radius: 5px;
@@ -601,6 +593,22 @@ header{background-color: white;
              }
         }
     }
+
+    
+.tarjetaDestacados h3 {
+       
+        margin-bottom: 10px; /
+    }
+    
+.tarjetaDestacados h4 {
+        margin-bottom: 5px; 
+    }
+    
+.tarjetaDestacados a {
+        margin-top: 10px; 
+        display: inline-block; 
+    }
+
 .textoProductos{padding-left:20px;
 padding-right:20px;
 margin-bottom: 40px;}   
@@ -691,13 +699,13 @@ textarea {
         }
     
         form label, form legend {
-            width: 100%; /* Ancho completo para etiquetas y leyendas */
-            display: block; /* Alineación vertical */
+            width: 100%; 
+            display: block; 
             margin-bottom: 5px;
         }
     
         form input, select, textarea, .botones {
-            width: 100%; /* Ancho completo para todos los elementos */
+            width: 100%; 
             box-sizing: border-box;
             padding: 8px;
             margin: 8px 0;
@@ -714,7 +722,7 @@ textarea {
         }
 
         .botones {
-            width: 30%; /* Ancho completo para los botones */
+            width: 30%; 
             margin-top: 10px;
             font-size: 1.2rem; 
         }
@@ -824,12 +832,13 @@ table {box-sizing: border-box;
        
         .tarjetasMateriales{
             box-sizing: border-box;
+            
             width: 350px;
-            height: 400px;
+            height: 450px;
             
             text-align: center;
            
-            box-shadow: 7px 7px 7px 7px rgba(233, 200, 177, 0.76); 
+            box-shadow: 7px 7px 7px 7px rgba(247, 99, 168, 0.363); 
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
            
@@ -837,13 +846,28 @@ table {box-sizing: border-box;
                 border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                     width: 95%;
-                    height:75%;
+                    height:70%;
                     object-fit:scale-down; /* probar con cover*/
                     
              }
+            
+             
         }
     }
    
+    .tarjetasMateriales h3 {
+       
+        margin-bottom: 10px; /
+    }
+    
+    .tarjetasMateriales h4 {
+        margin-bottom: 5px; 
+    }
+    
+    .tarjetasMateriales a {
+        margin-top: 10px; 
+        display: inline-block; 
+    }
     
     
     @media screen and (max-width: 768px){
@@ -895,7 +919,7 @@ table {box-sizing: border-box;
             
             text-align: center;
             padding: 10px;
-            box-shadow: 7px 7px 7px 7px rgba(238, 226, 175, 0.76); 
+            box-shadow: 7px 7px 7px 7px rgba(238, 222, 83, 0.623); 
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             border-bottom-left-radius: 5px;
@@ -951,8 +975,8 @@ margin-bottom: 40px;}
     background-image: url(../assets/img/acuarela22.png);
     background-blend-mode: lighten; /* O "overlay", "soft-light", según el efecto deseado */
     /*background: lightpink;*/
-    background-size: cover;  /* Asegura que la imagen cubra todo el área del elemento */
-    background-position: center;  /* Centra la imagen de fondo */
+    background-size: cover;  
+    background-position: center;  
     
 
     padding: 10px;
@@ -968,9 +992,9 @@ margin-bottom: 40px;}
 
 
 .card p {
-    text-align: justify; /* Justifica el texto dentro de la tarjeta */
-    line-height: 1.5;   /* Mejora la legibilidad */
-    width: 100%;        /* Asegúrate de que los párrafos usen todo el ancho */
+    text-align: justify; 
+    line-height: 1.5;   
+    width: 100%;        
     padding-left: 20px;
     padding-right: 20px;
 }
