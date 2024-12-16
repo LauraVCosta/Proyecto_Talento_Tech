@@ -53,7 +53,13 @@ li {
     margin-right: 15px;
             }
 
-            
+.d-none {
+                display: none;
+            }
+            .text-danger {
+                color: red;
+                font-size: 0.9em;
+            }           
             
 
             
@@ -779,6 +785,10 @@ table {box-sizing: border-box;
     caption{padding:20px;
     }
 
+.tituloHorarios{padding-bottom:10 px;
+padding-right: 0;
+padding-left: 0;
+padding-top: 0}
     
   
 @media screen and (max-width: 768px){
@@ -1030,8 +1040,42 @@ margin-bottom: 40px;}
 
 /*FINAL Encontranos*/
 
+/*COMIENZO Carrito*/
+
+.carrito {
+    margin: 20px;
+    display: flex;
+    display: inline-block;
+    justify-content: center; 
+    align-items: center;    
+    
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
 
 
+.botonesEliminar {width: 100px;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px ridge solid #521a3c; 
+    padding: 6px; 
+    border-radius: 10px; 
+    background-color: white; 
+    box-shadow: 7px 7px 7px 7px rgba(33, 129, 184, 0.349); 
+    
+    font-family: "Dosis", sans-serif; 
+    font-size: 1.2rem; 
+    color:#563b5a; 
+    font-weight: 700;
+    text-align: center;
+    margin-right: 20px;
+    }    
+
+
+/*FINAL Carrito*/
 
 
 

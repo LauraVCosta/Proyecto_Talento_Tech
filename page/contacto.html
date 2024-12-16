@@ -55,27 +55,28 @@
  
 
         <div>
-            <form action="validar.html" method="POST" class="formContacto">
-                <div >
-                    <label for="nombre"> Nombre</label>
-                    <input type="text" id ="nombre" name="nombre" type="text" placeholder="Nombre y Apellido" minlength="3" maxlength="50" required autofocus autocomplete="off">
+            <form id="miFormulario" action="validar.html" method="POST" class="formContacto">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="50" required>
+                    <small id="errorNombre" class="text-danger d-none">El nombre es obligatorio.</small>
                 </div>
                 
                 <div >
                     <label for="mail">Correo electrónico</label>
-                    <input type="email" id="mail" name="mail"  placeholder="ejemplo@mail.com" required>
+                    <input type="email" id="email" name="email"  placeholder="ejemplo@mail.com" required>
+                    <small id="errorEmail" class="text-danger d-none">El correo electrónico es obligatorio.</small>
                 </div>
             
-                <div>
-                    <label for="pass">Contraseña</label>
-                    <input id="pass" name="password" type="password" required>
-                </div>
+                
                 
                 <fieldset>
                     
                     <div>
                         <label for="fnac">Fecha de Nacimiento</label>
                         <input id="fnac" name="fecha_nac" type="date" required>
+                        <small id="errorFechaNac" class="d-none text-danger">Por favor, ingresa una fecha válida.</small>
+                        
                     </div>
                 </fieldset>
                 
@@ -112,7 +113,7 @@
                             <option value="Tierra del Fuego">Tierra del Fuego</option>
                             <option value="Tucuman">Tucuman</option>
                         </select>
-
+                        <small id="errorProvincia" class="d-none text-danger">Por favor, selecciona una provincia.</small>
                     </div>
                     
                     
@@ -122,6 +123,7 @@
                 <fieldset>
                     <legend>Dejanos tu comentario o consulta</legend>
                     <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                    <small id="errorComentario" class="text-danger d-none">El mensaje debe tener al menos 10 caracteres.</small>
                     <br>
                     
                 </fieldset>
@@ -129,8 +131,8 @@
                 <div class="botonera">
                     <fieldset >
                         
-                        <input class="botones" type="button" value="Cancelar" >
-                        <input class="botones" id="reset" type="reset" value="Limpiar">
+                       
+                        
                         <input class="botones" id="enviar" type="submit" value="Enviar">
                         
                     </fieldset>
@@ -211,6 +213,6 @@
 
     </footer>
 
-
+    <script src="../js/validacion_formulario.js"></script>
 </body>
 </html>

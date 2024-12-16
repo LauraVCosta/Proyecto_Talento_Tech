@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORDADINES</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" >
+    <script src="https://kit.fontawesome.com/d80233ee53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body id="body">
+   
+    <header >
+        
+        <div class="guardaHeaderMobile">
+            <img src="../assets/img/guarda2.png" width="300px"></div>
+        
+        <div class="contenedorGridHeader">
+            <nav class="columna1Header">
+                <img class="guardaMobile" src="../assets/img/guarda2.png" width="300px">
+                <ul class="tamañoFuenteMenu nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../page/nosotros.html">Nosotros</a></li>
+                    <li><a href="../page/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        
+            <div class="logoHeader">
+                <a href="../index.html"><img src="../assets/img/logo128px.png" alt="Bordado en punto cruz en proceso."></a>
+            </div>
+        
+            <nav class="columna2Header">
+                <img class="guardaMobile" src="../assets/img/guarda2.png" width="300px">
+                <ul class="tamañoFuenteMenu nav-list">
+                    <li><a href="../page/productos.html">Productos</a></li>
+                    <li><a href="../page/patrones_gratuitos.html">Patrones</a></li>
+                    <li><a href="../page/talleres.html">Talleres</a></li>
+                    <li><a href="../page/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+     
+   <main>
+
+    <section class="container">
+        <section class="tituloTalleres">
+            <img src="../assets/img/guarda5.png" width=90px>
+            
+            <h1 class="tituloMain">Carrito de Productos</h1>
+            <img src="../assets/img/guarda5.png" width=90px>
+            
+        </section>    
+    
+        <table class="carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCarrito">
+                <!-- Filas dinámicas -->
+            </tbody>
+        </table > 
+        <div class="mt-3">
+            <h2>Total: $<span id="totalCarrito">0.00</span></h2>
+        </div>
+      </section>
+
+
+   </main>  
+     
+    <footer> 
+    <section class="contenedorFooter logoFooter">
+            <a href="../index.html"><img src="../assets/img/logo128px.png"  alt="Bordado en punto cruz en proceso."></a> 
+            
+            <nav class="menusFooter">
+                <h3>CONTENIDOS</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../page/productos.html">Productos</a></li>
+                    <li><a href="../page/talleres.html">Talleres</a></li>
+                </ul>
+            </nav>
+
+            
+            <nav class="menusFooter">
+                <h3>QUIÉNES SOMOS</h3>   
+                <ul>
+                    <li><a href="../page/nosotros.html">Nosotros</a></li>
+                    <li><a href="../page/encontranos.html">Encontranos</a></li>
+                    
+                </ul>
+            </nav>
+            
+            <div class="menusFooter parrafoFooter">
+                <h3><a class= "tituloAncla" href="../page/contacto.html" >DEJANOS TU COMENTARIO O CONSULTA</a></h3> 
+                <p>¿Tenés preguntas o necesitas más información? No dudes en ponerte en contacto con nosotros.</p> 
+            </div>
+
+            <div class="footerRight">
+                <section class="newsletter">
+                    <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
+                    <form action="" class="suscribirse">
+                        <input type="email" placeholder="Tu correo electrónico" id="emailSuscripcion" name="emailSuscripcion" class="mail">
+                        <input type="submit" value="Suscribirme" class="botonSuscribirse">
+                    </form>
+                </section>
+                
+                <nav>
+                    <h3 class="contacto">CONTACTATE CON NOSOTROS</h3>
+                    <ul class="iconos">
+                        <li><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://x.com/" target="blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+                
+            <div>
+                <a class="volverArriba" href="#body" >Volver arriba</a>
+                <a href="https://web.whatsapp.com/" target="_blank"> 
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        
+
+        
+        <p class="footerDerechos">2024 Bordadines | Todos los derechos reservados.</p>
+
+        
+
+    </footer>
+
+<script src="../js/mostrar_carrito.js"></script>
+</body>
+</html>
